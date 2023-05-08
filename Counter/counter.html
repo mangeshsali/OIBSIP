@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+  </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+    .container {
+      border: solid black 3px;
+      border-radius: 7px;
+      width: 500px;
+      height: 350px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .main-div {
+      height: 100vh;
+      background-color: #a9c9ff;
+      background-image: linear-gradient(180deg, #a9c9ff 0%, #ffbbec 100%);
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    h1 {
+      padding-bottom: 20px;
+      font-size: 3rem;
+      font-weight: 600;
+      font-family: monospace;
+    }
+    #cnt {
+      padding-bottom: 30px;
+      font-size: 2.5rem;
+      font-weight: 600;
+      font-family: monospace;
+    }
+    button {
+      margin-left: 30px;
+      margin-right: 30px;
+      padding: 10px;
+      font-size: 1rem;
+      font-weight: 500;
+      border-radius: 4px;
+      color: white;
+      font-family: monospace;
+      background-color: rgb(30, 30, 30);
+    }
+    button:hover {
+      background-color: white;
+      color: rgb(30, 30, 30);
+    }
+    @media only screen and(max-width:425px) {
+      .container {
+        background-color: #a9c9ff;
+      }
+    }
+  </style>
+
+  <body>
+    <div class="main-div">
+      <div class="container">
+        <h1>Counter</h1>
+        <h2 id="cnt">0</h2>
+        <div class="all-btn">
+          <button id="decrease">Decrease</button>
+          <button id="reset">Reset</button>
+          <button id="increase">Increase</button>
+        </div>
+      </div>
+    </div>
+    <script src="./counter.js"></script>
+  </body>
+</html>

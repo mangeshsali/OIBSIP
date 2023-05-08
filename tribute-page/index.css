@@ -1,0 +1,41 @@
+h1 {
+  color: rgb(204, 204, 204);
+  font-family: "Lobster", cursive;
+  font-size: 60px;
+}
+
+img {
+  width: 300px;
+  border-radius: 25px;
+}
+body {
+  background-color: #0093e9;
+  background-image: linear-gradient(100deg, #0093e9, #80d0c7 100%);
+  text-align: center;
+}
+#tribute-info {
+  font-size: 22px;
+  font-weight: 500;
+}
+#main {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+a {
+  font-size: 20px;
+}
+#img-caption {
+  color: rgb(231, 204, 204);
+  font-size: 30px;
+}
+button,
+a {
+  border-radius: 7px;
+  background: rgb(0, 0, 0);
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  background-color: white;
+  color: black;
+}
